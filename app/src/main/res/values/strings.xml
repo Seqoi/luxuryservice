@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">SmartLab</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="onboarding1title">Анализы</string>
+    <string name="onboarding1description">Экспресс сбор и получение проб</string>
+    <string name="onboarding2title">Уведомления</string>
+    <string name="onboarding2description">Вы быстро узнаете о результатах</string>
+    <string name="onboarding3title">Мониторинг</string>
+    <string name="onboarding3description">Наши врачи всегда наблюдают\nза вашими показателями здоровья</string>
+    <string name="cardCreateTitle">Без карты пациента вы не сможете заказать анализы.</string>
+    <string name="cardCreateDescription">В картах пациентов будут храниться результаты анализов вас и ваших близких.</string>
+    <string name="profileDescription">Без карты пациента вы не сможете заказать анализы.\nВ картах пациентов будут храниться результаты анализов вас и ваших близких.</string>
+
+    <style name="title_big">
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/sf_pro_display_heavy</item>
+        <item name="fontWeight">800</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="pin_button" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_height">90dp</item>
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_margin">12dp</item>
+        <item name="android:background">@drawable/pincode_button</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@drawable/button_pin_color</item>
+        <item name="fontFamily">@font/sf_pro_display_heavy</item>
+        <item name="fontWeight">600</item>
+        <item name="android:enabled">true</item>
+    </style>
+
+    <style name="input_text">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:background">@drawable/text_input_bg</item>
+        <item name="android:ems">10</item>
+    </style>
+
+    <style name="tab_text">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="available_button">
+        <item name="android:background">@drawable/button_bg_available</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">15dp</item>
+        <item name="fontWeight">500</item>
+        <item name="fontFamily">@font/sf_pro_display_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingHorizontal">20dp</item>
+        <item name="android:paddingVertical">14dp</item>
+    </style>
+
+    <style name="unavailable_button">
+        <item name="android:background">@drawable/text_input_bg</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="fontWeight">500</item>
+        <item name="fontFamily">@font/sf_pro_display_medium</item>
+        <item name="android:textColor">#7E7E9A</item>
+        <item name="android:paddingHorizontal">20dp</item>
+        <item name="android:paddingVertical">14dp</item>
+    </style>
+
+
+</resources>

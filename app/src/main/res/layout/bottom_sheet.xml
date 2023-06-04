@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:id="@+id/bottom_sheet"
+    app:behavior_hideable="true"
+    android:padding="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_sheet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Клинический анализ чего-то там"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:fontFamily="@font/sf_pro_display_heavy"
+                android:textFontWeight="600"
+                />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Описание"/>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text="Пример описания"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textFontWeight="400"/>
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Подготовка"/>
+
+            <TextView
+                android:id="@+id/preparations"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text="Пример подготовки"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textFontWeight="400"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Результаты через:"/>
+
+            <TextView
+                android:id="@+id/results"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text="8 дней"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textFontWeight="400"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Биоматериал:"/>
+
+            <TextView
+                android:id="@+id/biomaterial"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text="Пример"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textFontWeight="400"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg_available"
+        android:textColor="@color/white"
+        android:text="Добавить за Цена"
+        android:textAllCaps="false"
+        android:textSize="17dp"
+        android:textFontWeight="700"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

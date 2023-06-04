@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.OrderActivity"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back"
+        android:layout_margin="20dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/text_input_bg"
+        android:padding="0dp"
+        android:clickable="true"
+        android:foreground="@drawable/back"
+        android:textColor="#B8C1CC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/sf_pro_display_heavy"
+        android:text="Оформление заказа"
+        android:textColor="@color/black"
+        android:textFontWeight="700"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:textFontWeight="400"
+                android:textSize="14dp"
+                android:text="Адрес *"/>
+
+            <EditText
+                android:id="@+id/address_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите ваш адрес"
+                android:textColorHint="@color/black"
+                style="@style/input_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:textFontWeight="400"
+                android:textSize="14dp"
+                android:text="Дата и время *"/>
+
+            <EditText
+                android:id="@+id/date_time_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Выберите дату и время"
+                android:focusable="false"
+                android:inputType="datetime"
+                style="@style/input_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:textFontWeight="400"
+                android:textSize="14dp"
+                android:text="Кто будет сдавать анализы? *"/>
+
+            <LinearLayout
+                android:id="@+id/user"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                style="@style/input_text">
+
+                <TextView
+                    android:id="@+id/user_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="👧🏼"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Имя"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/sf_pro_display_medium"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="12dp"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/add_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Добавить еще пациента"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/button_bg_available"
+                style="@style/unavailable_button"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:textFontWeight="400"
+                android:textSize="14dp"
+                android:text="Телефон *"/>
+
+            <EditText
+                android:id="@+id/phone_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите номер телефона"
+                android:inputType="phone"
+                style="@style/input_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:textFontWeight="400"
+                android:textSize="14dp"
+                android:text="Комментарий"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:lines="4"
+                android:gravity="start"
+                android:hint="Можете оставить свои пожелания"
+                style="@style/input_text"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
